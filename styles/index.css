@@ -280,6 +280,79 @@ body {
   height: 100%;
 }
 
+.footer {
+  background-color: white;
+  color: white;
+  padding: 60px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: gray;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: gray;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+
+/* Column 4: Social Icons inline */
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-icons a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.footer-icons a:hover img {
+  transform: scale(1.2);
+}
+
+
 /* navbar media responsive */
 @media screen and (max-width: 768px) {
     .nav-item{
@@ -369,6 +442,20 @@ body {
 
   .subscribe-form button {
     width: 100%;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items:left;
+    text-align: left;
+  }
+
+  .footer-icons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .footer-col {
+    margin-bottom: 30px;
   }
 }
 
